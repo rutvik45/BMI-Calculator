@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Caluclator</title>
+
+    <link rel="stylesheet" href="bmi.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <div class="display">
+        <div class="row">
+            <input type="range" min="10" max="150" value="10" id="weight" oninput="calculate()"> 
+            <span id="weight-value">10 KG</span>
+        </div>
+        <div class="row">
+            <input type="range" min="60" max="300" value="60" id="height" oninput="calculate()">
+            <span id="height-value">60 cms</span>
+        </div>
+        <p id="result"></p>
+        <p id="group"></p>
+    </div>
+    <script src="bmi.js"></script>
+</body>
+</html>

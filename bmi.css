@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg, #61d954, #2eb575);
+    height: 100vh;
+}
+
+.display{
+    background-color: white;
+    height: 500px;
+    width: 750px;
+    border-radius: 10px;
+   position: absolute;
+   transform: translate(-50%,-50%);
+   top: 50%;
+   left: 50%;
+   box-shadow: 25px 25px 30px rgba(0,0,0,0.15);
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 70px 40px 80px 40px;
+    justify-content: space-between;
+    font-size: 25px;
+}
+
+input[type="range"]{
+    width: 75%;
+    height: 4px;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #dcdcdc;
+    border-radius: 3px;
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    background-color:grey;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#result, #group{
+    text-align: center;
+    font-size: 40px; 
+    margin: 30px;
+    letter-spacing: 1px;
+}
+
+
+
+/*
+============================================================================================================================================
+            Media Query 1440px starts
+============================================================================================================================================
+*/
+@media only screen and (max-width: 1440px){
+    .display{
+        height: 300px;
+        width: 450px;
+    }
+
+    .row{
+        margin: 30px 40px;
+        font-size: 20px;
+    }
+
+    #result , #group {
+        font-size: 28px;
+        margin: 20px 30px;
+    }
+}
+
+
+
+/*
+============================================================================================================================================
+            Media Query 530px starts
+============================================================================================================================================
+*/
+@media only screen and (max-width: 530px){
+    .display{
+        height: 300px;
+        width: 350px;
+    }
+
+    .row{
+        margin: 40px ;
+        font-size: 16px;
+    }
+
+    #result , #group {
+        font-size: 24px;
+        margin: 20px 30px;
+    }
+}
+
+
+
+/*
+============================================================================================================================================
+            Media Query 430px starts
+============================================================================================================================================
+*/
+@media only screen and (max-width: 430px){
+    .display{
+        width: 275px;
+    }
+    .row{
+        margin: 30px ;
+        font-size: 13px;
+    }
+
+    #result , #group {
+        font-size: 24px;
+        margin: 15px 20px;
+    }
+}
+
+
+
+/*
+============================================================================================================================================
+            Media Query 320px starts
+============================================================================================================================================
+*/
+@media only screen and (max-width: 320px){
+  
+    .display{
+        width: 220px;
+    }
+    .row{
+        margin: 5
+        0px 10px ;
+        font-size: 11px;
+    }
+
+    #result , #group {
+        font-size: 20px;
+        margin: 20px 15px;
+    }
+}
